@@ -10,7 +10,6 @@ age = 20
 
 print(name)
 print(age)
-
 # 3. User se input lena
 user_name = input("enter your name: ")
 print("Welcome")

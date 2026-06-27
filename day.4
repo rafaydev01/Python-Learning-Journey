@@ -1,0 +1,70 @@
+# ==========================================
+# Apna College - Python Course: Lesson 1
+# Topics: Variables, Data Types, Operators, Input
+# ==========================================
+
+# 1. Printing Output
+print("Hello World!")
+print("Welcome to Python Lesson 1.")
+
+# 2. Variables and Data Types
+name = "Shradha"  # String
+age = 22          # Integer
+price = 25.99     # Float
+is_passed = True  # Boolean
+a = None          # NoneType
+
+print("Name:", name)
+print("Age:", age)
+print("Price:", price)
+
+# Checking Data Types
+print(type(name))
+print(type(age))
+
+# 3. Arithmetic Operators
+num1 = 10
+num2 = 5
+
+print("Sum:", num1 + num2)
+print("Difference:", num1 - num2)
+print("Product:", num1 * num2)
+print("Division:", num1 / num2)
+print("Remainder (Modulo):", num1 % num2)
+print("Power (Exponent):", num1 ** num2)
+
+# 4. Relational / Comparison Operators
+print(num1 > num2)   # True
+print(num1 == num2)  # False
+
+# 5. Type Conversion (Implicit & Explicit)
+# Implicit
+x = 2
+y = 4.25
+sum_val = x + y  # Python automatically converts x to float
+print(sum_val)
+
+# Explicit (Type Casting)
+val = int("123")
+print(type(val))
+
+# 6. Taking User Input
+user_name = input("Enter your name: ")
+user_age = int(input("Enter your age: "))  # Casting input to integer
+
+print("Welcome", user_name)
+print("You are", user_age, "years old.")
+
+# ==========================================
+# Practice Questions from Lesson 1
+# ==========================================
+
+# Q1: Write a program to input 2 numbers and print their sum.
+val1 = float(input("Enter first number: "))
+val2 = float(input("Enter second number: "))
+print("Practice Q1 Sum:", val1 + val2)
+
+# Q2: WAP to input side of a square and print its area.
+side = float(input("Enter square side: "))
+area = side * side
+print("Area of square:", area)

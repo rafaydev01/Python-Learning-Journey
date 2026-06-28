@@ -1,0 +1,9 @@
+# Exercise: Store a superhero's information
+first_name = "abdul"
+last_name = "rafay"
+age = 52
+is_genius = True
+
+# Take input for user's favorite superhero
+superhero = input("What is your superhero name? ")
+print("Your superhero is: " + superhero)

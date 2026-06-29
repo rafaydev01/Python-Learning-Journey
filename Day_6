@@ -1,0 +1,86 @@
+# =========================================================
+# LECTURE 1: VARIABLES, DATA TYPES & OPERATORS (Apna College)
+# =========================================================
+
+# 1. Our First Python Program
+print("Hello World")
+print("Abdul rafay")
+
+# 2. Variables & Dynamic Typing
+name = "rafay"      # String
+age = 22             # Integer
+price = 25.99        # Float
+
+print("My name is :", name)
+print("My age is :", age)
+
+# Variables can be updated
+age = 24
+print("Updated age is :", age)
+
+# 3. Data Types Verification
+print(type(name))   # <class 'str'>
+print(type(age))    # <class 'int'>
+print(type(price))  # <class 'float'>
+
+# 4. Constants & Rules for Identifiers
+# Rules: Can start with alphabet or underscore (_), no special characters except underscore, case sensitive.
+a = 10
+A = 20
+print(a)
+print(A) # Both are different due to case sensitivity
+
+# 5. Arithmetic Operators
+num1 = 5
+num2 = 2
+
+print("Sum:", num1 + num2)
+print("Difference:", num1 - num2)
+print("Product:", num1 * num2)
+print("Division:", num1 / num2)
+print("Remainder (Modulo):", num1 % num2)
+print("Power (Exponentiation):", num1 ** num2)
+
+# 6. Relational / Comparison Operators
+print(num1 == num2) # False
+print(num1 != num2) # True
+print(num1 >= num2) # True
+print(num1 < num2)  # False
+
+# 7. Assignment Operators
+num = 10
+num += 5 # num = num + 5 -> 15
+print("Updated assignment:", num)
+
+# 8. Logical Operators
+val1 = True
+val2 = False
+print("AND operator:", val1 and val2) # False
+print("OR operator:", val1 or val2)   # True
+print("NOT operator:", not val1)      # False
+
+# 9. Type Conversion & Casting
+# Implicit Conversion (Automatic)
+int_val = 4
+float_val = 2.5
+sum_val = int_val + float_val # Python converts int to float automatically
+print(sum_val, type(sum_val))
+
+# Explicit Conversion (Type Casting)
+str_num = "123"
+converted_num = int(str_num)
+print(converted_num + 5) # 128
+
+# 10. Taking Input from User & Practice Questions
+# Input always stores value as a string by default
+user_name = input("Enter your name: ")
+print("Welcome", user_name)
+
+# Practice 1: Sum of two numbers from user input
+first = float(input("Enter first number: "))
+second = float(input("Enter second number: "))
+print("The sum is:", first + second)
+
+# Practice 2: Area of a Square
+side = float(input("Enter side of square: "))
+print("Area of square is:", side * side)

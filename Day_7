@@ -1,0 +1,20 @@
+# Reading a file
+f = open("demo.txt", "r")
+data = f.read()
+print(data)
+f.close()
+
+# Writing to a file (Overwrites existing data)
+f = open("demo.txt", "w")
+f.write("I want to learn JavaScript today.")
+f.close()
+
+# Appending to a file (Adds to the end of file)
+f = open("demo.txt", "a")
+f.write("\nThen I will move to Web Development.")
+f.close()
+
+# Using 'with' syntax (Automatically closes the file)
+with open("demo.txt", "r") as f:
+    data = f.read()
+    print(data)

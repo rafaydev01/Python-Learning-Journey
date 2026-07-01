@@ -1,0 +1,10 @@
+# Variables ko assign karna
+name = "Abdul Rafay"
+marks = 435
+
+# Output print karna
+print("Student Name:", name)
+print("Marks Obtained:", marks)
+
+# F-string ka istemal karte hue (Day 9 standard formatting)
+print(f"Hi {name}, aapke marks {marks} hain.")

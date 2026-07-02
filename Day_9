@@ -1,0 +1,31 @@
+# --- DATA TYPES & VARIABLES (DAY 9) ---
+
+# 1. Text Type (String)
+user_name = "Abdulrafay"
+course_name = "Python Programming"
+
+# 2. Numeric Types (Integer, Float)
+user_age = 22  # int
+course_fee = 4500.50  # float
+
+# 3. Boolean Type (True/False)
+is_enrolled = True
+has_completed_assignment = False
+
+# 4. Sequence Types (List, Tuple)
+# List: Mutable (Can be changed)
+skills_list = ["Python", "HTML", "CSS"]
+
+# Tuple: Immutable (Cannot be changed)
+coordinates = (33.56, 73.01)
+
+# 5. Mapping Type (Dictionary)
+student_profile = {"id": 101, "name": "Abdulrafay", "grade": "A"}
+
+# 6. Set Type (Unique elements)
+unique_student_ids = {101, 102, 103, 101}  # Removes duplicates automatically
+
+# --- PRINTING AND CHECKING TYPES ---
+print("Student Name:", user_name)
+print("Data Type of course_fee:", type(course_fee))
+print("Skills:", skills_list)

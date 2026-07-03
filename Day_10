@@ -1,0 +1,11 @@
+# Integer (Whole Number)
+age = 25 
+
+# Float (Decimal Number)
+price = 19.99 
+
+# String (Text)
+greeting = "Hello, World!" 
+
+# Boolean (True or False)
+is_active = True 

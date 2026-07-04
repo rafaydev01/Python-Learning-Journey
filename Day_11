@@ -1,0 +1,29 @@
+# ==========================================
+# STEP 1: USER INPUTS (String & Float Variables)
+# ==========================================
+user_name = "Abdul Rafay"
+roommate_name = input("Enter your roommate's name: ")
+
+total_rent = float(input("Enter total house rent: "))
+electricity_bill = float(input("Enter total electricity bill: "))
+internet_bill = float(input("Enter total internet bill: "))
+
+# ==========================================
+# STEP 2: CALCULATIONS (Arithmetic Operations)
+# ==========================================
+# Adding all expenses together into a single variable
+grand_total = total_rent + electricity_bill + internet_bill
+
+# Dividing the total bill equally between 2 people
+per_person_share = grand_total / 2
+
+# ==========================================
+# STEP 3: OUTPUT DISPLAY (String Concatenation)
+# ==========================================
+print("\n" + "="*35)
+print("--- EXPENSE SPLIT SUMMARY ---")
+print("="*35)
+print("Roommates: " + user_name + " and " + roommate_name)
+print("Total Combined Expenses: $" + str(grand_total))
+print("Amount Each Person Owes: $" + str(per_person_share))
+print("="*35)

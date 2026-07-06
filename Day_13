@@ -1,0 +1,7 @@
+# Variables to store student data
+student_name = "Abdul Rafay"
+obtained_marks = 435
+
+# Displaying the variables on the screen
+print("Student Name:", student_name)
+print("Obtained Marks:", obtained_marks)

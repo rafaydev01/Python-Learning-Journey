@@ -1,0 +1,46 @@
+# ==========================================
+# DAY 14: VARIABLES & DATA TYPES MINI PROJECT
+# ==========================================
+
+# 1. String Data Type (Text information)
+student_name = "Abdul Rafay"
+roll_number = "FA26-BCS-042"
+course_name = "Python Programming Introduction"
+
+# 2. Integer Data Type (Whole numbers)
+marks_math = 85
+marks_physics = 78
+marks_computer = 92
+total_subjects = 3
+
+# 3. List Data Type (Collection of items)
+enrolled_modules = ["Variables", "Data Types", "Basic Operators"]
+
+# 4. Float Data Type (Decimal values)
+obtained_marks = marks_math + marks_physics + marks_computer
+percentage = (obtained_marks / 300) * 100
+
+# 5. Boolean Data Type (True/False condition)
+is_passed = percentage >= 50.0
+
+# ==========================================
+# DISPLAYING THE OUTPUT (DATA PRINTING)
+# ==========================================
+print("=========================================")
+print("         STUDENT ACADEMIC RECORD         ")
+print("=========================================")
+print("Student Name  :", student_name)
+print("Roll Number   :", roll_number)
+print("Course        :", course_name)
+print("-----------------------------------------")
+print("Current Topic :", enrolled_modules[1])  # Accessing list item
+print("Total Topics  :", len(enrolled_modules))
+print("-----------------------------------------")
+print("Math Marks    :", marks_math)
+print("Physics Marks :", marks_physics)
+print("Computer Marks:", marks_computer)
+print("-----------------------------------------")
+print("Total Score   :", obtained_marks, "/ 300")
+print("Percentage    :", percentage, "%")
+print("Status Passed :", is_passed)
+print("=========================================")

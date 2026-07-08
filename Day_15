@@ -1,0 +1,24 @@
+# Shradha Khapra - Lecture 2: Strings & Conditional Statements
+
+# 1. String Manipulation (Concept: Len function & Indexing)
+name = "Rafay"
+print("User Name:", name)
+print("Length of the name:", len(name))
+print("First letter of the name:", name[0])
+
+print("-" * 30)
+
+# 2. Conditional Statements (Concept: if-elif-else)
+# Student Grading System based on Lecture 2 rules
+marks = 85  # You can change this value to test different grades
+
+print(f"Marks scored by {name}: {marks}")
+
+if marks >= 90:
+    print("Grade: A")
+elif marks >= 80 and marks < 90:
+    print("Grade: B")
+elif marks >= 70 and marks < 80:
+    print("Grade: C")
+else:
+    print("Grade: D / Fail")

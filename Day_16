@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Lecture2 {
+    public static void main(String[] args) {
+        // Scanner class ka object banaya input lene ke liye
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("--- Lecture 2: Variables & Input Output ---");
+
+        // Pehla number input lena
+        System.out.print("Enter first number (a): ");
+        int a = sc.nextInt();
+
+        // Dosra number input lena
+        System.out.print("Enter second number (b): ");
+        int b = sc.nextInt();
+
+        // Operations perform karna
+        int sum = a + b;
+        int product = a * b;
+
+        // Output print karna
+        System.out.println("\n--- Results ---");
+        System.out.println("The Sum of a and b is: " + sum);
+        System.out.println("The Product of a and b is: " + product);
+
+        sc.close(); // Scanner close karna achi practice hai
+    }
+}

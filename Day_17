@@ -1,0 +1,13 @@
+# 1. Variables - Storing data
+user_name = "Abdul Rafay"
+user_score = 85
+
+# 2. Conditions - Making decisions based on variables
+print(f"User Profile: {user_name}")
+
+if user_score >= 90:
+    print("Status: Excellent Performance!")
+elif user_score >= 70:
+    print("Status: Good Job!")
+else:
+    print("Status: Need Improvement.")

@@ -1,0 +1,19 @@
+# GitHub Profile: Abdil Rafay
+# Topic: Variables and Conditions in Python
+
+# 1. Defining Variables
+user_name = "Abdil Rafay"
+repository_count = 14
+is_active_developer = True
+
+# 2. Conditional Logic (if-elif-else)
+print(f"Developer Name: {user_name}")
+
+if repository_count == 0:
+    print(f"Welcome to GitHub, {user_name}! Create your first repository.")
+elif repository_count > 0 and repository_count <= 5:
+    print(f"{user_name} is a Getting Started Developer with {repository_count} repositories.")
+elif repository_count > 5 and is_active_developer:
+    print(f"{user_name} is an Active Contributor with {repository_count} repositories.")
+else:
+    print(f"Profile status for {user_name} cannot be determined.")

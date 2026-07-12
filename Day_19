@@ -1,0 +1,15 @@
+# Day 2: Variables and Conditions Mini-Project
+# Objective: Print "Abdul Rafay" using variables and a conditional check.
+
+# 1. Variables
+first_name = "Abdul"
+last_name = "Rafay"
+is_valid_user = True
+
+# 2. Condition
+if is_valid_user:
+    # Concatenate variables and print the result
+    full_name = first_name + " " + last_name
+    print(full_name)
+else:
+    print("Access Denied")

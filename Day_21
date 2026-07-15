@@ -1,0 +1,31 @@
+# --- LESSON 1: VARIABLES AND INPUT ---
+
+# 1. Printing output
+print("Hello World!")
+print("Welcome to Python Lesson 1.")
+
+# 2. Variables and Data Types
+name = "Shradha"      # String
+age = 25              # Integer
+price = 99.99         # Float
+is_following = True   # Boolean
+a = None              # None type
+
+print(name)
+print(age)
+
+# 3. Printing data types
+print(type(name))
+print(type(age))
+
+# 4. Taking Input from User
+user_name = input("Enter your name: ")
+user_age = int(input("Enter your age: ")) # Type casting to integer
+
+print("Hello", user_name, "you are", user_age, "years old.")
+
+# 5. Practice Problem: Sum of two numbers
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+sum_result = num1 + num2
+print("The sum is:", sum_result)

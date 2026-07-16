@@ -1,0 +1,39 @@
+# LESSON 1: Print Statement and Variables
+
+# 1. Print Statement (Display text on screen)
+print("Hello, Welcome to Python!")
+
+# 2. Variables (Storing different types of data)
+name = "Ali"          # String (text)
+age = 25              # Integer (whole number)
+height = 5.8          # Float (decimal number)
+is_student = True     # Boolean (True or False)
+
+# Printing variables
+print(name)
+print(age)
+
+
+# LESSON 2: Basic Arithmetic and User Input
+
+# 1. Arithmetic Operators
+num1 = 10
+num2 = 5
+
+sum_result = num1 + num2       # Addition (15)
+diff_result = num1 - num2      # Subtraction (5)
+prod_result = num1 * num2      # Multiplication (50)
+div_result = num1 / num2       # Division (2.0)
+
+print(sum_result)
+
+# 2. Taking Input from User
+user_name = input("Enter your name: ")
+print("Hello " + user_name)
+
+# 3. Input with Numbers (Type Casting)
+# input() always takes data as text, so we convert it to int for math
+user_age = int(input("Enter your age: "))
+years_left = 100 - user_age
+print("You will turn 100 in this many years:")
+print(years_left)

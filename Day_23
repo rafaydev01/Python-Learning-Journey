@@ -1,0 +1,61 @@
+# =====================================================================
+# KALI LINUX & CYBERSECURITY FOUNDATIONS: PYTHON ROADMAP
+# REFERENCE: SHRADHA DIDI (APNA COLLEGE) PYTHON COURSE - LECTURE 1 & 2
+# TOPICS: VARIABLES, INPUTS, STRINGS, AND CONDITIONAL STATEMENTS
+# =====================================================================
+
+print("--- CHAPTER 1: VARIABLES & DATA TYPES ---")
+
+# Step 1: Declaring different variables types
+hacker_name = "Future Cyber Warrior"
+target_laptop = "Dell Latitude 7290"
+ram_gb = 8
+is_persistence_active = False
+
+# Step 2: Displaying variables and checking their types
+print(f"User Name: {hacker_name} | Type: {type(hacker_name)}")
+print(f"System Model: {target_laptop} | Type: {type(target_laptop)}")
+print(f"System RAM: {ram_gb}GB | Type: {type(ram_gb)}")
+print(f"Persistence Status: {is_persistence_active} | Type: {type(is_persistence_active)}")
+
+print("\n--- CHAPTER 2: OPERATORS & USER INPUTS ---")
+
+# Simple Arithmetic Practice
+allocated_space = 128
+used_space = 5
+remaining_space = allocated_space - used_space
+print(f"Total Available Space for Lab: {remaining_space} GB")
+
+# Taking dynamic user inputs (Practice Problems from Lecture 1)
+print("\n[SYSTEM DIAGNOSTIC TEST]")
+user_device = input("Enter your laptop model: ")
+allocated_persistence = int(input("Enter persistence size required (in GB): "))
+print(f"Success: Configured {allocated_persistence}GB persistence on {user_device}!")
+
+
+print("\n--- CHAPTER 3: STRINGS & FUNCTIONS (LECTURE 2) ---")
+
+# String Manipulation & Slicing Practice
+target_domain = "kali.org"
+print(f"Target Length: {len(target_domain)}")
+print(f"First character of target: {target_domain[0]}")
+print(f"Counting occurrences of 'a': {target_domain.count('a')}")
+
+
+print("\n--- CHAPTER 4: CONDITIONAL STATEMENTS (IF-ELIF-ELSE) ---")
+
+# Dynamic grading/decision logic practiced in Lecture 2
+# Scenario: Assessing memory requirement for building a security lab
+required_ram = 16
+
+if required_ram >= 16:
+    print("Status: Excellent configuration for advanced multi-booting environment.")
+elif required_ram >= 8:
+    print("Status: Standard configuration. Perfect for running lightweight Python scripts.")
+else:
+    print("Warning: Insufficient memory to handle parallel operations.")
+
+# Final Motivation output to complete the basic lab script
+print("\n=====================================================================")
+print("GOAL LOCKED: Working hard to make family proud and drive a BMW!")
+print("=====================================================================")

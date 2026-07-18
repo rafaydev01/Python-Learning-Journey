@@ -1,0 +1,58 @@
+# =====================================================================
+# ETHICAL HACKING FOUNDATIONS: PYTHON LAB PRACTICE SHEET 02
+# BASED ON: SHRADHA DIDI (APNA COLLEGE) PYTHON COURSE - LECTURE 1 & 2
+# TOPICS: ADVANCED INPUTS, STRING INDEXING, AND CONDITIONAL FILTERS
+# =====================================================================
+
+print("=====================================================================")
+print("          CYBERSECURITY TOOLKIT: DIAGNOSTIC SCRIPT (PART 2)          ")
+print("=====================================================================")
+
+print("\n--- SECTION 1: CUSTOMER NETWORK LAB CONFIGURATION ---")
+
+# Step 1: Requesting target variables from the system auditor
+organization_name = input("Enter Target Company Name: ")
+firewall_status = input("Is Firewall active? (Yes/No): ")
+lab_id = 9182
+
+# Step 2: Dynamic Type Conversion and Data Presentation
+# Combining strings and checking logical attributes
+print(f"[+] Auditing Target: {organization_name} | System Lab ID: {lab_id}")
+print(f"[+] Security Status Type: {type(firewall_status)}")
+
+
+print("\n--- SECTION 2: FIREWALL SECURITY FILTER (CONDITIONAL LOGIC) ---")
+
+# Practical application of If-Elif-Else from Lecture 2
+# Scenario: Checking password strength or login attempts security
+login_attempts = int(input("Enter number of failed login attempts detected: "))
+
+if login_attempts >= 5:
+    print("[-] ALERT: Brute-Force attack suspected! IP address blocked temporarily.")
+elif login_attempts >= 3:
+    print("[!] WARNING: Multiple failed logins. Enforcing Captcha verification.")
+else:
+    print("[+] STATUS: Traffic looks normal. System access granted safely.")
+
+
+print("\n--- SECTION 3: SYSTEM LOG ANALYSIS (STRING MANIPULATION) ---")
+
+# String slicing and manipulation practice from Lecture 2
+# Extracting crucial bits from a sample network log string
+raw_system_log = "CRITICAL_ERROR: Unauthorized access detected at port 80"
+
+print(f"Original Log Length: {len(raw_system_log)} characters")
+print(f"Log Category (First 14 chars): {raw_system_log[0:14]}")
+
+# Searching and counting patterns inside logs
+alert_count = raw_system_log.count("ERROR")
+print(f"Total 'ERROR' strings found in local line: {alert_count}")
+
+# Checking if string ends with port 80
+is_web_port = raw_system_log.endswith("port 80")
+print(f"Is traffic directed to Web Server (Port 80)? {is_web_port}")
+
+
+print("\n=====================================================================")
+print("MISSION OBJECTIVE: Building elite skills, making family proud!")
+print("=====================================================================")

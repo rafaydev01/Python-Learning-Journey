@@ -1,0 +1,10 @@
+# 1. Printing text to the screen
+print("Hello! Welcome to Python Lesson 1.")
+
+# 2. Creating variables (Storing data)
+user_name = "Rafay"
+user_age = 25
+
+# 3. Printing variables
+print("User Name:", user_name)
+print("User Age:", user_age)

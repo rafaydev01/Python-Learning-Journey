@@ -1,0 +1,27 @@
+# --- STEP 1: User Input and Variables ---
+print("--- Welcome to Python Lesson 2 ---")
+user_name = "Rafay"
+age = 20
+is_student = True
+budget = 500.50
+
+# Printing basic types
+print("User Name:", user_name)
+print("Type of user_name:", type(user_name))
+
+# --- STEP 2: Conditional Logic (If-Elif-Else) ---
+print("\n--- Checking Age Status ---")
+if age < 13:
+    print(f"Hey {user_name}, you are a child.")
+elif age >= 13 and age < 20:
+    print(f"Hey {user_name}, you are a teenager.")
+else:
+    print(f"Welcome {user_name}! You are an adult.")
+
+# --- STEP 3: Simple Arithmetic and Loops ---
+print("\n--- Counting Practice ---")
+for i in range(1, 4):
+    result = i * 2
+    print(f"Loop number {i}: {i} multiplied by 2 is {result}")
+
+print("\n--- End of Program ---")

@@ -1,0 +1,165 @@
+# =================================================================
+# APNA COLLEGE - PYTHON COMPLETE COURSE
+# Chapter 1: Introduction to Python & Chapter 2: Strings & Conditional Statements
+# Program Author: Rafay
+# =================================================================
+
+# -----------------------------------------------------------------
+# CHAPTER 1 PROJECTS: Variables, Data Types, and Input/Output
+# -----------------------------------------------------------------
+
+print("--- START OF CHAPTER 1 DEMO ---")
+
+# Step 1: Declaring different variable types as taught by Sharda Didi
+name = "Rafay"          # String variable
+age = 20                # Integer variable
+price = 99.99           # Float variable
+is_learning = True      # Boolean variable
+a = None                # None type variable
+
+# Step 2: Printing the values and their exact data types
+print("User Name:", name)
+print("Data Type of name is:", type(name))
+
+print("User Age:", age)
+print("Data Type of age is:", type(age))
+
+print("Product Price:", price)
+print("Data Type of price is:", type(price))
+
+print("Is Rafay learning Python?", is_learning)
+print("Data Type of is_learning is:", type(is_learning))
+
+print("Value of a:", a)
+print("Data Type of a is:", type(a))
+
+print("-------------------------------------------------")
+
+# Step 3: Arithmetic and Logical Operators Practice
+num1 = 500
+num2 = 250
+
+# Performing basic calculations
+sum_result = num1 + num2
+diff_result = num1 - num2
+mul_result = num1 * num2
+div_result = num1 / num2
+modulo_result = num1 % num2
+
+print("Addition Result (500 + 250):", sum_result)
+print("Subtraction Result (500 - 250):", diff_result)
+print("Multiplication Result (500 * 250):", mul_result)
+print("Division Result (500 / 250):", div_result)
+print("Remainder/Modulo Result (500 % 250):", modulo_result)
+
+print("-------------------------------------------------")
+
+# Step 4: Relational and Logical Operators
+print("Is num1 greater than num2?", num1 > num2)
+print("Is num1 equal to num2?", num1 == num2)
+
+# Logical AND/OR conditions
+condition1 = (num1 > num2) and (age > 18)
+condition2 = (num1 < num2) or (name == "Rafay")
+
+print("Logical AND test result:", condition1)
+print("Logical OR test result:", condition2)
+
+print("-------------------------------------------------")
+
+# Step 5: Type Conversion vs Type Casting
+# Type Conversion (Automatic by Python)
+val1 = 10      # int
+val2 = 4.5     # float
+final_val = val1 + val2
+print("Automatic Type Conversion Result:", final_val, "| Type:", type(final_val))
+
+# Type Casting (Manual conversion by programmer)
+string_num = "100"
+converted_num = int(string_num)
+total_sum = converted_num + 50
+print("Manual Type Casting Result:", total_sum)
+
+print("--- END OF CHAPTER 1 DEMO ---\n")
+
+
+# -----------------------------------------------------------------
+# CHAPTER 2 PROJECTS: Strings, Indexing, Slicing, and Conditionals
+# -----------------------------------------------------------------
+
+print("--- START OF CHAPTER 2 DEMO ---")
+
+# Step 1: String Concatenation and Length Calculation
+first_part = "Welcome to Python, "
+full_message = first_part + name  # Joining strings
+print("Concatenated String:", full_message)
+
+message_length = len(full_message)
+print("Total length of the message string is:", message_length)
+
+print("-------------------------------------------------")
+
+# Step 2: String Indexing and Slicing as explained in the lectures
+# Accessing specific characters using indexes
+print("First character of the name:", name[0])
+print("Last character of the name:", name[-1])
+
+# Slicing the string [start_index : end_index]
+sample_str = "ApnaCollegePython"
+sliced_part1 = sample_str[0:4]     # Gets "Apna"
+sliced_part2 = sample_str[4:11]    # Gets "College"
+sliced_part3 = sample_str[11:]     # Gets "Python" (till end)
+
+print("Sliced Part 1:", sliced_part1)
+print("Sliced Part 2:", sliced_part2)
+print("Sliced Part 3:", sliced_part3)
+
+print("-------------------------------------------------")
+
+# Step 3: Built-in String Functions
+story = "rafay loves to code in python. rafay watches apna college daily."
+
+print("Original Story String:", story)
+print("Ends with 'daily.'?", story.endswith("daily."))
+print("Capitalized First Letter:", story.capitalize())
+print("Replaced name:", story.replace("rafay", "Rafay"))
+print("Find index of word 'code':", story.find("code"))
+print("Count how many times 'rafay' appears:", story.count("rafay"))
+
+print("-------------------------------------------------")
+
+# Step 4: Conditional Statements (if-elif-else) Practice
+# Let's run a check system for Rafay's profile grading
+
+marks = 85  # Example score for testing conditionals
+
+print("Evaluating grades for student Rafay based on marks:", marks)
+
+if marks >= 90:
+    print("Grade: A+ (Outstanding performance!)")
+elif marks >= 80 and marks < 90:
+    print("Grade: A (Excellent work, Rafay!)")
+elif marks >= 70 and marks < 80:
+    print("Grade: B (Good job, keep improving.)")
+elif marks >= 33 and marks < 70:
+    print("Grade: C (Passed, need more practice.)")
+else:
+    print("Grade: F (Failed, watch Sharda Didi's videos again.)")
+
+print("-------------------------------------------------")
+
+# Step 5: Nesting Conditionals Example
+is_logged_in = True
+has_premium_account = False
+
+print("Checking system permissions for Rafay:")
+if is_logged_in == True:
+    print("Status: Logged into Apna College Dashboard.")
+    if has_premium_account == True:
+        print("Access Level: Unlimited Premium Content.")
+    else:
+        print("Access Level: Free Basic Content Only.")
+else:
+    print("Status: Please log in first.")
+
+print("--- END OF CHAPTER 2 DEMO ---")

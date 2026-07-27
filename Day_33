@@ -1,0 +1,103 @@
+# =================================================================
+# APNA COLLEGE - PYTHON COMPLETE COURSE
+# Chapter 3: Lists & Tuples
+# Program Author: Rafay
+# =================================================================
+
+print("--- START OF CHAPTER 3: LISTS & TUPLES ---")
+
+# Step 1: Creating and Printing a List (Mutable Data Type)
+# Sharda Didi explained that Lists can store different data types
+rafay_profile = ["Rafay", 20, 85.5, "Rawalpindi", True]
+
+print("Original List:", rafay_profile)
+print("Type of rafay_profile:", type(rafay_profile))
+print("Length of the list:", len(rafay_profile))
+
+print("-------------------------------------------------")
+
+# Step 2: Accessing Elements, Indexing, and Mutability
+# Unlike strings, lists are mutable (we can change their values)
+print("First element (Name):", rafay_profile[0])
+print("Third element (Marks):", rafay_profile[2])
+
+# Changing the location value from "Rawalpindi" to "Jhelum"
+rafay_profile[3] = "Jhelum"
+print("Updated List (Location Changed):", rafay_profile)
+
+# List Slicing [start_index : end_index]
+print("Sliced List (First 3 elements):", rafay_profile[0:3])
+
+print("-------------------------------------------------")
+
+# Step 3: Important List Methods (Functions)
+numbers_list = [45, 12, 89, 7, 23, 56]
+print("Original Numbers List:", numbers_list)
+
+# 1. append() - Adds an element at the end
+numbers_list.append(100)
+print("After append(100):", numbers_list)
+
+# 2. sort() - Sorts the list in ascending order
+numbers_list.sort()
+print("After sort() [Ascending]:", numbers_list)
+
+# 3. sort(reverse=True) - Sorts the list in descending order
+numbers_list.sort(reverse=True)
+print("After sort(reverse=True) [Descending]:", numbers_list)
+
+# 4. reverse() - Reverses the original list
+numbers_list.reverse()
+print("After reverse():", numbers_list)
+
+# 5. insert() - Inserts element at a specific index (index, value)
+numbers_list.insert(2, 999)
+print("After insert(2, 999):", numbers_list)
+
+# 6. remove() - Removes the first occurrence of the element
+numbers_list.remove(999)
+print("After remove(999):", numbers_list)
+
+# 7. pop() - Removes element from a specific index
+numbers_list.pop(0)
+print("After pop(0) [First element removed]:", numbers_list)
+
+print("-------------------------------------------------")
+
+# Step 4: Tuples in Python (Immutable Data Type)
+# Sharda Didi taught us that Tuples cannot be changed once created
+marks_tuple = (95, 82, 76, 82, 90)
+print("Created Tuple:", marks_tuple)
+print("Type of marks_tuple:", type(marks_tuple))
+
+# Single element tuple syntax must have a comma
+single_item_tuple = (50,)
+print("Single Item Tuple Type:", type(single_item_tuple))
+
+print("-------------------------------------------------")
+
+# Step 5: Tuple Methods
+# 1. count() - Counts total occurrences of an element
+count_of_82 = marks_tuple.count(82)
+print("How many times 82 appears in tuple?:", count_of_82)
+
+# 2. index() - Finds the index of the first occurrence
+index_of_76 = marks_tuple.index(76)
+print("Index of number 76 is:", index_of_76)
+
+print("-------------------------------------------------")
+
+# Step 6: Simple Practical Problem (List & Conditionals Combination)
+# Let's check if a dynamic item exists in Rafay's favorite programming languages
+fav_languages = ["Python", "C++", "Java", "JavaScript"]
+
+search_language = "Python"
+
+print("Checking Rafay's Favorite Languages List:", fav_languages)
+
+if search_language in fav_languages:
+    print(f"Success: {search_language} is present in Rafay's list!")
+else:
+    print(f"Alert: {search_language} is not found in the list.")
+
+print("--- END OF CHAPTER 3 DEMO ---")

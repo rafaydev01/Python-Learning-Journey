@@ -1,0 +1,118 @@
+# =================================================================
+# APNA COLLEGE - PYTHON COMPLETE COURSE
+# Chapter 4: Dictionaries & Sets
+# Program Author: Rafay
+# =================================================================
+
+print("--- START OF CHAPTER 4: DICTIONARIES & SETS ---")
+
+# Step 1: Creating a Dictionary (Key-Value Pairs, Mutable, No Duplicates)
+# Sharda Didi explained that dictionaries store data structurally
+rafay_academy = {
+    "name": "Rafay",
+    "course": "Python Programming",
+    "subjects": ["Variables", "Strings", "Lists", "Dictionaries"],
+    "total_marks": 100,
+    "is_certified": False
+}
+
+print("Original Dictionary:", rafay_academy)
+print("Type of rafay_academy:", type(rafay_academy))
+
+print("-------------------------------------------------")
+
+# Step 2: Accessing and Updating Dictionary Values
+# Accessing via key name
+print("Student Name:", rafay_academy["name"])
+print("Enrolled Course:", rafay_academy["course"])
+
+# Changing an existing value and adding a new key
+rafay_academy["is_certified"] = True
+rafay_academy["learning_platform"] = "Apna College"
+
+print("Updated Dictionary (Status & Platform Added):", rafay_academy)
+
+print("-------------------------------------------------")
+
+# Step 3: Nested Dictionaries (Dictionary inside a Dictionary)
+student_database = {
+    "student1": {
+        "name": "Rafay",
+        "score": 92
+    },
+    "student2": {
+        "name": "Ali",
+        "score": 78
+    }
+}
+
+print("Nested Database:", student_database)
+print("Accessing Rafay's Score from Nested Dict:", student_database["student1"]["score"])
+
+print("-------------------------------------------------")
+
+# Step 4: Core Dictionary Methods
+print("1. Dictionary Keys:", list(rafay_academy.keys()))
+print("2. Dictionary Values:", list(rafay_academy.values()))
+print("3. Dictionary Items (Pairs):", list(rafay_academy.items()))
+
+# Using .get() method (Safe method: returns None instead of an error if key doesn't exist)
+print("4. Safe Get Course:", rafay_academy.get("course"))
+print("5. Safe Get Non-existent Key:", rafay_academy.get("age")) 
+
+# Using .update() method to add or modify data
+rafay_academy.update({"city": "Rawalpindi", "total_marks": 105})
+print("6. After update() method:", rafay_academy)
+
+print("-------------------------------------------------")
+
+# Step 5: Sets in Python (Unordered, Unique Elements, Immutable Items)
+# Sets do not allow duplicate entries
+raw_numbers = [10, 20, 20, 30, 40, 40, 50]
+unique_set = set(raw_numbers) # Converting list to set to remove duplicates
+
+print("Original List with Duplicates:", raw_numbers)
+print("Created Set (Duplicates automatically removed):", unique_set)
+print("Type of unique_set:", type(unique_set))
+
+# Creating an empty set requires set() syntax ({} creates an empty dict)
+empty_set = set()
+print("Empty Set Type Check:", type(empty_set))
+
+print("-------------------------------------------------")
+
+# Step 6: Core Set Methods
+my_set = {1, 2, 3}
+print("Original Set:", my_set)
+
+# 1. add() - Adds an element
+my_set.add(4)
+my_set.add(2) # Adding duplicate (will be ignored)
+print("After add(4) and add(2):", my_set)
+
+# 2. remove() - Removes an element
+my_set.remove(1)
+print("After remove(1):", my_set)
+
+# 3. clear() - Empties the entire set
+my_set.clear()
+print("After clear():", my_set)
+
+print("-------------------------------------------------")
+
+# Step 7: Advanced Set Operations (Union & Intersection)
+set_A = {1, 2, 3, 4, 5}
+set_B = {4, 5, 6, 7, 8}
+
+print("Set A:", set_A)
+print("Set B:", set_B)
+
+# Union combines elements from both sets
+union_result = set_A.union(set_B)
+print("Union of Set A & B (All items):", union_result)
+
+# Intersection finds common elements between sets
+intersection_result = set_A.intersection(set_B)
+print("Intersection of Set A & B (Common items):", intersection_result)
+
+print("--- END OF CHAPTER 4 DEMO ---")

@@ -1,0 +1,104 @@
+# =================================================================
+# APNA COLLEGE - PYTHON COMPLETE COURSE
+# Chapter 6: Functions & Recursion
+# Program Author: Rafay
+# =================================================================
+
+print("--- START OF CHAPTER 6: FUNCTIONS & RECURSION ---")
+
+# Step 1: Defining a Basic Function (No parameters, no return)
+# Sharda Didi explained that functions reduce code redundancy
+def print_welcome_message():
+    print("Hello Everyone!")
+    print("Welcome to Apna College Python Series.")
+    print("This execution is managed for student: Rafay.")
+
+# Calling the function to execute its block
+print_welcome_message()
+
+print("-------------------------------------------------")
+
+# Step 2: Functions with Parameters and Arguments
+# Parameters act as placeholders for data inside functions
+def calculate_average(marks_list):
+    total_sum = sum(marks_list)
+    total_subjects = len(marks_list)
+    average = total_sum / total_subjects
+    return average  # Returning the calculated value back
+
+# Testing the average function with Rafay's marks
+rafay_marks = [85, 92, 78, 90, 88]
+calculated_avg = calculate_average(rafay_marks)
+
+print(f"Rafay's Marks List: {rafay_marks}")
+print(f"Calculated Average Score: {calculated_avg}")
+
+print("-------------------------------------------------")
+
+# Step 3: Default Parameters inside Functions
+# Default parameters must always be declared at the end of the argument list
+def print_student_info(student_name, batch_year=2026, platform="Apna College"):
+    print(f"Student: {student_name} | Batch: {batch_year} | Platform: {platform}")
+
+print("Calling function with all parameters:")
+print_student_info("Rafay", 2026, "Apna College Labs")
+
+print("\nCalling function with default values (omitting batch and platform):")
+print_student_info("Rafay")
+
+print("-------------------------------------------------")
+
+# Step 4: Practical Practice Problems using Functions
+# Problem 1: Function to calculate currency exchange (USD to PKR)
+def convert_usd_to_pkr(usd_amount, exchange_rate=278):
+    pkr_total = usd_amount * exchange_rate
+    return pkr_total
+
+dollars = 50
+pkr_result = convert_usd_to_pkr(dollars)
+print(f"Currency Conversion: ${dollars} USD is equal to {pkr_result} PKR.")
+
+# Problem 2: Function to check if a number is Even or Odd
+def check_even_odd(number):
+    if number % 2 == 0:
+        return "Even Number"
+    else:
+        return "Odd Number"
+
+test_num = 47
+print(f"The number {test_num} is classified as an: {check_even_odd(test_num)}")
+
+print("-------------------------------------------------")
+
+# Step 5: Introduction to Recursion (Function calling itself)
+# Sharda Didi emphasized that recursion must have a base case to prevent endless loop
+print("Using Recursion to print a countdown from 5 to 1:")
+
+def print_countdown_recursive(n):
+    # Base Case: Condition where the recursion stops
+    if n == 0:
+        return
+    
+    print(f"Recursive State: {n}")
+    print_countdown_recursive(n - 1)  # Inner Recursive Call
+
+# Calling the recursive function
+print_countdown_recursive(5)
+
+print("-------------------------------------------------")
+
+# Step 6: Classic Recursion Problem (Calculating Factorial)
+# Factorial of 5 (5!) = 5 * 4 * 3 * 2 * 1 = 120
+def calculate_factorial(n):
+    # Base Case
+    if n == 0 or n == 1:
+        return 1
+    # Recursive Case: n * factorial(n-1)
+    else:
+        return n * calculate_factorial(n - 1)
+
+target_number = 5
+factorial_result = calculate_factorial(target_number)
+print(f"Mathematical Factorial calculation of {target_number}! is: {factorial_result}")
+
+print("--- END OF CHAPTER 6 DEMO ---")

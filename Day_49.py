@@ -52,3 +52,15 @@ def process_inventory():
 # Run the program
 if __name__ == "__main__":
     process_inventory()
+
+
+
+
+
+
+
+
+
+
+
+

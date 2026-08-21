@@ -13,4 +13,9 @@ while True:
             print(letter, end="", flush=True)
             time.sleep(0.1)
         print("\n")
-        time.sleep(1)
+        time.sleep(1)   
+
+
+ 
+
+        
